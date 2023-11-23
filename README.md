@@ -96,6 +96,9 @@ In the XV6 operating system, a process can be in one of the following states:
 Running: process is currently executing on the CPU.
 Runnable: process is ready to run but waiting for CPU to be assigned.
 Sleeping: process is waiting for some event to occur, such as I/O completion.
+Zombie: This state occurs when a process has completed execution, but its parent process has not yet collected its exit status.
+Embryonic: Initial phase of process creation. OS sets up process data but hasn't started executing yet.
+Unused: when process is not been used or has been terminated.
 
 #### Question 13: File System Structure
 13. Describe the structure of the file system in XV6. Include the key components and their roles.
@@ -152,4 +155,14 @@ Ans - The XV6 boot process starts with turning on the computer and setting up th
 ## Answers
 Please write your answers here
 
-Question 1) b. A Unix-like operating system
+Question 1.    b. A Unix-like operating system
+Question 2.    c. BSD
+Question 3.    d. simple
+Question 4.    d. As external programs
+Question 5.    b. 256
+Question 6.    c. Sh
+Question 7.    a. Round-robin scheduling
+Question 8.    a. Paging
+Question 9.    d. Both b and c
+Question 10.   b No
+Question 11.   c. MIT
